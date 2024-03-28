@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+}
+
+header ul button{
+    position: relative;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #a15757;
+    color: white;
+}
+
+header ul button:hover{
+    background-color: #683939;
+    cursor: pointer;
+}
+.headlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    zoom: 0.5;
+}
+
+header li {
+    float: left;
+}
+
+header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+header li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.sellingBackground {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* Ensure items stack vertically */
+    align-items: center;
+    /* Center horizontally */
+    background-color: rgba(27, 26, 26, 0.83);
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 28px;
+    text-align: center;
+    height: 150px;
+}
+
+.buyingBackground {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* Ensure items stack vertically */
+    align-items: center;
+    /* Center horizontally */
+    background-color: rgba(27, 26, 26, 0.83);
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 28px;
+    text-align: center;
+    height: 150px;
+    margin-top: 80px;
+    margin-bottom: 28px;
+}
+
+.sellingBackground .sellingButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sellingButton button {
+    zoom: 2.5;
+    background-color: rgba(163, 80, 53, 0.83);
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    padding: 4px 20px;
+}
+
+.sellingButton a {
+    text-decoration: none;
+    color: white;
+}
+
+.buyingButton a {
+    text-decoration: none;
+    color: white;
+}
+
+.sellingButton button:hover {
+    background-color: rgba(149, 75, 50, 0.83);
+}
+
+.buyingBackground .buyingButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buyingButton button {
+    zoom: 2.5;
+    background-color: rgba(163, 80, 53, 0.83);
+    color: #ffb077;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    padding: 4px 20px;
+}
+
+.buyingButton button:hover {
+    background-color: rgba(149, 75, 50, 0.83);
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#dead-stock-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.dead-stock-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.news-item h3::before {
+    content: ""; /* Required for a pseudo-element to be generated */
+    display: inline-block;
+    width: 10px; /* Size of the dot */
+    height: 10px;
+    margin-right: 5px; /* Space between the dot and the text */
+    background-color: red;
+    border-radius: 50%; /* Makes it circular */
+    animation: blink-animation 1s infinite; /* The blinking animation */
+    vertical-align: middle; /* Aligns the dot vertically to the middle of the text */
+  }
+  
+  @keyframes blink-animation {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  
+  
+  .trend-content {
+    animation: blink-animation 4s infinite;
+  }
+  
+
+  .trend-content{
+    color: red;
+  }
+
+  .slide-in-left a {
+    animation: slideInLeft 1s ease-out forwards;
+    color: red;
+  }
+
+  .slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+    color: red;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+  
+  
+  
