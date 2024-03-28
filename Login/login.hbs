@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.sub {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.sub:hover {
+    background-color: #45a049;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.nkj{
+    margin-top: 40px;
+}
+.han{
+    margin-top: 0px;
+}
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <h1>Sign In</h1>
+
+        <form action="/login" method="post">
+            <input placeholder="Email" name="name" type="email" class="nkj">
+            <br>
+            <input placeholder="Password" name="password" type="password">
+            <br>
+            <input class="sub han" type="submit">
+            <h3>Don't have an account?</h3>
+            <a href="/signup">Create a new account</a>
+        </form>
+    </div>
+
+</body>
+</html>
