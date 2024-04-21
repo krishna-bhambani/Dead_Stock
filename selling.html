@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selling Section</title>
+    <link rel="stylesheet" href="selling.css">
+</head>
+<body>
+    <section id="logoHead">
+        <div class="headlogo">
+            <div class="logo">
+                <img src="logoHead.png" alt="">
+            </div>
+        </div>
+    </section>
+    <header>
+        <ul>
+            <li><a href="index.html"><img src="cart.png" width="48px"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signIn.html">Sign In</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="selling-item">
+            <h2>Enter Details for Selling Item</h2>
+            <form id="sellingForm">
+                <div class="form-group">
+                    <label for="itemName">Item Name:</label>
+                    <input type="text" id="itemName" name="itemName" required>
+                </div>
+                <div class="form-group">
+                    <label for="brandName">Brand Name:</label>
+                    <input type="text" id="brandName" name="brandName" required>
+                </div>
+                <div class="form-group">
+                    <label for="itemDescription">Item Description:</label>
+                    <textarea id="itemDescription" name="itemDescription" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="itemPhotos">Item Photos:</label>
+                    <input type="file" id="itemPhotos" name="itemPhotos" accept="image/*" multiple required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="itemFeatures">Item Features:</label>
+                    <textarea id="itemFeatures" name="itemFeatures" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dead Stock Marketplace</p>
+    </footer>
+</body>
+</html>

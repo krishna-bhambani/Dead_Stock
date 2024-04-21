@@ -1,0 +1,27 @@
+<!-- <h2>Sell Dead Stock</h2>
+            <form id="sell-form">
+                <label for="item-name">Item Name:</label>
+                <input type="text" id="item-name" name="item-name" required>
+                <label for="item-price">Price:</label>
+                <input type="number" id="item-price" name="item-price" required>
+                <button type="submit">List Item</button>
+            </form> -->
+
+
+            .headContain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(244, 240, 240);
+}
+.containHead{
+    border: 2px solid black;
+    background-color: #3f181886;
+    height: 80px;
+    width: 80%;
+}
+
+
+
+
